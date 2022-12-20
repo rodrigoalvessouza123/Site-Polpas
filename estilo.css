@@ -1,0 +1,263 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.logo > img{
+	width: 140px;
+	margin: 5px;
+	margin-left: 15px;
+}
+
+
+.menu{
+	display: flex; /*deixar um ao lado do outro*/
+	flex-direction: row;
+	justify-content: space-between; /*ajusta espaçamento entre elementos*/	
+	background: #27ae60;
+
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	align-items: center; /*alinhar os itens na vertical, no centro/so funciona se tiver o display flex*/
+}
+
+nav > div{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+nav > div > a{
+	text-decoration: none;
+	font-size: larger;
+	color: #ecf0f1;
+}
+nav > div > a:hover{
+	color: green;
+}
+
+.banner{
+	width: 100%;
+	height: 750px;
+}
+.banner > img {
+	width: 100%;
+	max-height: 750px;
+}
+
+.slogan{
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	top: 60%;
+	left: 20%;
+}
+.polpas{
+	background: #eccc68;
+	padding: 30px;
+}
+.secaoFrutas{
+	padding: 30px;
+	background-color: #0fb9b1;
+}
+.secaoMudas{
+	padding: 30px;
+	background:#d2dae2;
+}
+.sobre{
+	padding: 30px;
+	background-color:#2c3e50 ;
+}
+
+.sabor , .frutas, .mudas{
+	min-height: 300px;
+	min-width: 250px;
+	padding: 15px;
+}
+
+center > h1{
+	color: green;
+	font-size: 35px;
+}
+center > div{
+	color: #e67e22;
+}
+.s01{
+	background-image: url("imagens/graviola.jpg");
+}
+.s02{
+	background-image: url("imagens/caju.PNG");
+}
+.s03{
+	background-image: url("imagens/Maracuja.jpg");
+}
+.s04{
+	background-image: url("imagens/acerola.jpg");
+}
+.s05{
+	background-image: url("imagens/Uva.png");
+}
+.s06{
+	background-image: url("imagens/tamarino.jpg");
+}
+.s07{
+	background-image: url("imagens/goiaba.jpg");
+}
+.s08{
+	background-image: url("imagens/manga.jpg");
+}
+
+.saborRows , .rowFrutas , .mudasRow{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; /*quando for minimizando a tela,os elementos vão ficando um abaixo do outro*/
+}
+
+.s01, .s08{
+	flex: 2;
+}
+.s02, .s03, .s04, .s05, .s06, .s07{
+	flex: 1;
+}
+.s01,.s02, .s03, .s04, .s05, .s06, .s07, .s08 , .f01 , .f02, .f03, .m01, .m02, .m03{
+	border: 1px solid blue;
+	border-radius: 10px;
+	background-repeat: no-repeat; /*pra imagem não se repetir*/
+	background-size: 100% 100%; /*100% largura e altura(imagem) */
+
+	display: flex;
+	align-items: flex-end; /*jogar o texto pro canto inferior esquerdo*/
+	justify-content: center; /*centralizar o texto*/
+
+	font-size: x-large; /*tamanho da fonte*/
+	font-weight: bolder;/*deixar a fonte mais escura*/
+	color: #27ae60;
+	margin: 10px; /*afastar os elementos pra não ficar colados*/
+}
+
+.f01{
+	background-image: url("imagens/frutabanana.jpg");
+}
+.f02{
+	background-image: url("imagens/frutaGoiaba.jpg");
+}
+.f03{
+	background-image: url("imagens/mamao.jpg");
+}
+.f01{
+ 	flex: 2;
+
+}
+.f02, .f03, .m01, .m02, .m03{
+	flex: 1;
+}
+
+.m01{
+	background-image: url("imagens/mudaGoiaba.jpg");
+}
+.m02{
+	background-image: url("imagens/mudaGraviola.jpg");
+}
+.m03{
+	background-image: url("imagens/mudaMaracuja.jpg");
+}
+
+.descricao{
+	text-align: center;
+	font-size: 20px;
+}
+.descricao > h2{
+	color: green;
+	margin: 10px;
+}
+.descricao > h4{
+	color: orange;
+	margin: 10px;
+}
+.descricao > div{
+	margin: 10px;
+	color: #bdc3c7;
+}
+.missaoVisaoValores{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.missao, .visao, .valores{
+	flex: 1;
+	padding: 10px;
+	/*border: 1px solid blue;*/
+	min-width: 300px;
+	height: 200px;
+	text-align: center;
+	font-size: 20px;
+	color: #bdc3c7;
+}
+
+.missao > h2, .visao >h2, .valores >h2{
+	color:green ;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+hr{
+	width: 15%;
+	margin: auto;
+	margin-bottom: 15px;
+	height: 2px;
+	background-color:black ;
+}
+
+.rodape{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+	font-size: 20px;
+}
+.col-1, .col-2, .col-3{
+	flex: 1;
+	min-width: 300px;
+	height: 350px;
+	text-align: center;
+}
+
+.rodape > .col-1 > img{
+	margin-bottom: 15px;
+}
+.rodape > .col-1 > p{
+	margin-bottom: 15px;
+}
+.rodape > .col-2 > h2{
+	margin-bottom: 40px;
+	margin-top: 15px;
+}
+.rodape > .col-2 > p{
+	margin-bottom: 15px;
+}
+
+.subRodape{
+	display: flex;
+	flex-direction: row;
+
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	height: 40px;
+	background-color: black;
+	color: whitesmoke;
+	font-size: 18px;
+}
+.subRodape > .coluna-2 > a{
+	text-decoration: none;
+	margin: 5px; /*distancia entre os elementos de redes sociais*/
+	color: whitesmoke;
+}
